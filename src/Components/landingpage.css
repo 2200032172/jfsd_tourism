@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .landing-page {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Transparent */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px;
+    z-index: 100;
+  }
+  
+  .navbar-title {
+    font-family: 'Galada', cursive;
+    font-size: 48px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 20px;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ff5722;
+  }
+  
+  /* Image Slider Section */
+  .image-slider {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 1s ease-in-out;
+    position: relative;
+  }
+  
+  /* Text Overlay on Images */
+  .image-text {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    /* Slightly transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Search Container Below Images */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    margin-top: -10px; /* Pulls it slightly above */
+  }
+  
+  .search-container input,
+  .search-container button {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .search-container button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Holiday and Homestay Section */
+  /* Choose Your Holiday Section */
+.holiday-section {
+    padding: 50px;
+    background-color: #f5f5f5;
+  }
+  
+  .holiday-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .places-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  
+  .place-card {
+    position: relative;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .circle-card {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .square-card {
+    width: 200px;
+    height: 200px;
+  }
+  
+  /* Position the text on the image */
+  .place-card-text {
+    position: absolute;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+  }
+  
+  .circle-card .place-card-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .square-card .place-card-text {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Homestay Section remains the same */
+  .homestay-section {
+    padding: 50px;
+    background-color: #f5f5f5;
+  }
+  
+  .homestay-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .places-container .place-card {
+    width: 30%;
+    height: 200px;
+  }
+  /* Image Styles */
+.place-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit; /* Inherit the shape (circle or square) */
+  }
+  
+  .place-card-text {
+    position: absolute;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better readability */
+  }
+  
+  .circle-card .place-card-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .square-card .place-card-text {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+    
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
